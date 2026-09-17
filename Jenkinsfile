@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: main, url: 'https://github.com/HeyItsArsh/Agile-Lab-7-5.git'
+        git branch: 'main', url: 'https://github.com/HeyItsArsh/Agile-Lab-7-5.git'
       }
     }
     stage('Show App Info') {
