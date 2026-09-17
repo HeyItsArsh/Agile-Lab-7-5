@@ -12,13 +12,13 @@ pipeline {
     }
     stage('Show App Info') {
       steps {
-        echo 'Building ${env.APP_NAME}, version ${env.APP_VERSION}'
+        echo "Building ${env.APP_NAME}, version ${env.APP_VERSION}"
       }
     }
     stage('Build') {
       steps {
         bat 'python -m py_compile app.py'
-        echo '${env.APP_NAME} version ${env.APP_VERSION} Compiled Successfully.'
+        echo "${env.APP_NAME} version ${env.APP_VERSION} Compiled Successfully."
       }
     }
   }
